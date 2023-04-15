@@ -1,0 +1,175 @@
+$time: 1s;
+$color: 0.05s;
+$deley: 2.76;
+$begColor: var(--begColor);
+$begColor400: var(--begColor400);
+$begColor200: var(--begColor200);
+//time: tempo da função que seta color no texto
+//color: tempo do transition color
+@mixin animatinTemplate($time, $color, $deley) {
+ animation: animationStock $time ease-in-out;
+ transition: color $color ease-in-out $deley
+}
+
+//one
+.sct-text-one[aria_stock = "true"] > span:nth-child(1) {
+ -webkit-text-stroke: 1px $begColor;
+ @include animatinTemplate($time, $color, 0.55s)
+}
+.sct-text-one[aria_stock = "true"] > span:nth-child(2) {
+ -webkit-text-stroke: 1px $begColor;
+ @include animatinTemplate($time, $color * 1.2, 0.75s)
+}
+.sct-text-one[aria_stock = "true"] > span:nth-child(3) {
+ -webkit-text-stroke: 1px $begColor;
+ @include animatinTemplate($time, $color * 1.2, 0.99)
+}
+.sct-text-one[aria_stock = "true"] > span:nth-child(4) {
+ -webkit-text-stroke: 1px $begColor;
+ @include animatinTemplate($time * 1.4, $color * 1.5, 1.22s)
+}
+.sct-text-one[aria_stock = "true"] > span:nth-child(5) {
+ -webkit-text-stroke: 1px $begColor;
+ @include animatinTemplate($time * 1.7, $color * 1.8, 1.23)
+}
+.sct-text-one[aria_stock = "true"] > span:nth-child(6) {
+ -webkit-text-stroke: 1px $begColor;
+ @include animatinTemplate($time * 2, $color * 2.1, 1.44s)
+}
+.sct-text-one[aria_stock = "true"] > span:nth-child(7) {
+ -webkit-text-stroke: 1px $begColor;
+ @include animatinTemplate($time * 2.5, $color * 2.5, 1.77s)
+}
+.sct-text-one[aria_stock = "true"] > span:nth-child(8) {
+ -webkit-text-stroke: 1px $begColor;
+ @include animatinTemplate($time * 2.8, $color * 2.9, 1.99s)
+}
+.sct-text-one[aria_stock = "true"] > span:nth-child(9) {
+ -webkit-text-stroke: 1px $begColor;
+ @include animatinTemplate($time * 3.2, $color * 3.5, 2.33s)
+}
+.sct-text-one[aria_stock = "true"] > span:nth-child(10) {
+ -webkit-text-stroke: 1px $begColor;
+ @include animatinTemplate($time * 4.0, $color * 4.0, 2.55s)
+}
+.sct-text-one[aria_stock = "true"] > span:nth-child(11) {
+ -webkit-text-stroke: 1px $begColor;
+ @include animatinTemplate($time * 4.3, $color* 4.5, 2.66s)
+}
+
+//two
+
+.sct-text-two[aria_stock = "true"] > span:nth-child(1) {
+ -webkit-text-stroke: 1px $begColor400;
+ @include animatinTemplate($time * 1.1, $color * 1.2, 0s)
+}
+.sct-text-two[aria_stock = "true"] > span:nth-child(2) {
+ -webkit-text-stroke: 1px $begColor400;
+ @include animatinTemplate($time * 1.5, $color * 1.8, 0s)
+}
+.sct-text-two[aria_stock = "true"] > span:nth-child(3) {
+ -webkit-text-stroke: 1px $begColor400;
+ @include animatinTemplate($time * 1.7, $color * 1.7, 0s)
+}
+.sct-text-two[aria_stock = "true"] > span:nth-child(4) {
+ -webkit-text-stroke: 1px  $begColor400;
+ @include animatinTemplate($time * 1.9, $color * 1.9, 0s)
+}
+.sct-text-two[aria_stock = "true"] > span:nth-child(5) {
+ -webkit-text-stroke: 1px  $begColor400;
+ @include animatinTemplate($time * 2.1, $color * 2.1, 0s)
+}
+.sct-text-two[aria_stock = "true"] > span:nth-child(6) {
+ -webkit-text-stroke: 1px  $begColor400;
+ @include animatinTemplate($time * 2.3, $color * 2.3, 0s)
+}
+.sct-text-two[aria_stock = "true"] > span:nth-child(7) {
+ -webkit-text-stroke: 1px  $begColor400;
+ @include animatinTemplate($time * 2.7, $color * 2.7, 0s)
+}
+.sct-text-two[aria_stock = "true"] > span:nth-child(8) {
+ -webkit-text-stroke: 1px $begColor400;
+ @include animatinTemplate($time * 3.2, $color * 3.2, 0s)
+}
+.sct-text-two[aria_stock = "true"] > span:nth-child(9) {
+ -webkit-text-stroke: 1px $begColor400;
+ @include animatinTemplate($time * 3.6, $color * 3.5, 0s)
+}
+.sct-text-two[aria_stock = "true"] > span:nth-child(10) {
+ -webkit-text-stroke: 1px $begColor400;
+ @include animatinTemplate($time * 4.2, $color * 4.2, 0s)
+}
+.sct-text-two[aria_stock = "true"] > span:nth-child(11) {
+ -webkit-text-stroke: 1px $begColor400;
+ @include animatinTemplate($time * 4.7, $color* 4.8, 0s)
+}
+ 
+//three
+
+.sct-text-three[aria_stock = "true"] > span:nth-child(1) {
+ -webkit-text-stroke: 1px $begColor200;
+ @include animatinTemplate($time * 1.8, $color * 1.8, 0s)
+}
+.sct-text-three[aria_stock = "true"] > span:nth-child(2) {
+ -webkit-text-stroke: 1px $begColor200;
+ @include animatinTemplate($time * 2.3, $color * 2.3, 0s)
+}
+.sct-text-three[aria_stock = "true"] > span:nth-child(3) {
+ -webkit-text-stroke: 1px $begColor200;
+ @include animatinTemplate($time * 2.6, $color * 2.6, 0s)
+}
+.sct-text-three[aria_stock = "true"] > span:nth-child(4) {
+ -webkit-text-stroke: 1px $begColor200;
+ @include animatinTemplate($time * 2.9, $color * 2.9, 0s)
+}
+.sct-text-three[aria_stock = "true"] > span:nth-child(5) {
+ -webkit-text-stroke: 1px $begColor200;
+ @include animatinTemplate($time * 3.3, $color * 3.3, 0s)
+}
+.sct-text-three[aria_stock = "true"] > span:nth-child(6) {
+ -webkit-text-stroke: 1px $begColor200;
+ @include animatinTemplate($time * 3.5, $color * 3.5, 0s)
+}
+.sct-text-three[aria_stock = "true"] > span:nth-child(7) {
+ -webkit-text-stroke: 1px $begColor200;
+ @include animatinTemplate($time * 3.6, $color * 3.6, 0s)
+}
+.sct-text-three[aria_stock = "true"] > span:nth-child(8) {
+ -webkit-text-stroke: 1px $begColor200;
+ @include animatinTemplate($time * 4, $color * 4, 0s)
+}
+.sct-text-three[aria_stock = "true"] > span:nth-child(9) {
+ -webkit-text-stroke: 1px $begColor200;
+ @include animatinTemplate($time * 4.4, $color * 4.5, 0s)
+}
+.sct-text-three[aria_stock = "true"] > span:nth-child(10) {
+ -webkit-text-stroke: 1px $begColor200;
+ @include animatinTemplate($time * 5.0, $color * 5.0, 0s)
+}
+.sct-text-three[aria_stock = "true"] > span:nth-child(11) {
+ -webkit-text-stroke: 1px $begColor200;
+ @include animatinTemplate($time * 5.2, $color* 5.4, 0s)
+}
+
+@keyframes animationStock {
+ 0% {
+  color: transparent;
+  opacity: 0;
+ }
+ 25% {
+  opacity: 0;
+  color: transparent;
+ }
+ 50% {
+  opacity: 1;
+  color: transparent
+ }
+ 75% {
+  opacity: 1;
+  color: inherit;
+ }
+ 100% {
+  color: inherit;
+  opacity: 1;
+ }
+}

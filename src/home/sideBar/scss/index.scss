@@ -1,0 +1,21 @@
+.side-bar {
+ display: flex;
+}
+
+.side-bar-container {
+ width: 100%;
+ flex: 1;
+ height: 250px;
+ border-top: 1px solid #212121;
+ &:nth-child(1) {
+  border-right: 1px solid #212121;
+ }
+ padding: 25px;
+  > h1 { 
+   color: #dedede
+  }
+  > p {
+   margin-top: 15px;
+   color: #b8b8b8;
+  }
+}

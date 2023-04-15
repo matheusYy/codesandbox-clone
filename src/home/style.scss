@@ -1,0 +1,38 @@
+@use './scss/_span/index';
+
+.home-article {
+ display: flex;
+ position: relative;
+ flex-flow: column;
+ justify-content: center;
+ height: 75vh;
+}
+
+.sct-text {
+ display: flex;
+ font-size: var(--txtSize);
+ width: 100%;
+ max-width: 1190px;
+ align-items: flex-start;
+ justify-content: flex-start;
+ padding: 20px;
+}
+.sct-text > h1 {
+ width: min-content;
+ position: relative;
+ color: transparent;
+ text-align: justify;
+ height: 2.8em;
+ letter-spacing: -8px;
+ line-height: 110px;
+}
+
+.sct-text-content { 
+
+ width: initial;
+ position: relative;
+ top: -320px;
+ letter-spacing: -8px;
+ line-height: 110px;
+
+}
